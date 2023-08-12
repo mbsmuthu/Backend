@@ -13,6 +13,13 @@
   },
   "author": "Muthu Balasubramanian",
   "license": "ISC",
+  "precommit": "lint-staged",
+  "lint:staged": "lint-staged",
+  "lint-staged": {
+    "*.js": [
+      "./node_modules/.bin/eslint"
+    ]
+  },
   "bugs": {
     "url": "https://github.com/mbsmuthu/Backend/issues"
   },
