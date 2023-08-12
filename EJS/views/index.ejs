@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJS</title>
+</head>
+<body>
+    <h1><%= title %></h1>
+    <p>The current second is <%= second %></p>
+    
+     <p>The current second is <% (second % 2 === 0) ?  %> <p>even </p> <% : %> <p>odd</p></p>
+     
+    <ol>
+        <% for( let index = 0; index < items.length; index++ ) { %>
+            <li><%= items[index]  %></li>
+            
+        <% } %>
+    </ol>
+        <h3><%- htmlContent %></h3>
+        <%- include("footer.ejs") %>
+</body>
+</html>
