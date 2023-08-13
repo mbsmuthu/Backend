@@ -27,7 +27,3 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
     console.log(`App is running in port ${port}`);
 })
-
-// app.post("/submit", (req, res) => {
-//     console.log(req.body)
-// })
